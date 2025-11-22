@@ -1,6 +1,29 @@
-#root {
-  max-width: 1280px;
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+nav a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0 2em;
+  display: flex;
+  align-items: center;
+}
+
+#nav-links {
+  margin-left: auto;
+}
+
+#nav-links a {
+  display: inline-block;
+  margin: 0;  
+  padding: 1em;
 }
