@@ -1,31 +1,27 @@
 @import "tailwindcss";
 
-nav {
-  width: 100%;
-  position: fixed;
-  top: 0;
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(0.99 0 0);
+  --foreground: oklch(0.145 0 0);
+  --muted-foreground: oklch(0.5 0.02 230);
 }
 
-nav a {
-  font-weight: 500;
-  color: #505050;
-  text-decoration: none;
+.dark {
+  --background: oklch(0.1 0.01 230);
+  --foreground: oklch(0.98 0 0);
+  --muted-foreground: oklch(0.65 0.02 230);
 }
 
-.nav-list {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0 2em;
-  display: flex;
-  align-items: center;
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
 }
 
-#nav-links {
-  margin-left: auto;
-}
-
-#nav-links a {
-  display: inline-block;
-  margin: 0;  
-  padding: 1em;
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
 }
