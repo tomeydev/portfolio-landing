@@ -29,7 +29,7 @@ export default function About() {
             <div className="max-w-6xl mx-auto">
                 <div className="space-y-4 mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold">
-                        <span className="font-mono text-lg mr-2">01.</span>
+                        <span className="font-mono text-lg mr-2 text-primary">01.</span>
                         Sobre mí
                     </h2>
                     <div className="h-px from-primary via-secondary to-transparent max-w-md" />
@@ -37,7 +37,7 @@ export default function About() {
 
                 <div className="grid md:grid-cols-2 gap-12 mb-16">
                     <div>
-                        <p className=" leading-relaxed">
+                        <p className="text-muted-foreground leading-relaxed">
                             Mi pasión por el desarrollo móvil comenzó hace más de 6 años cuando publiqué mi primera app en la App Store. 
                             Desde entonces, he creado experiencias móviles para startups innovadoras y empresas Fortune 500.
                             Me especializo en construir aplicaciones móviles que los usuarios aman usar. Combino desarrollo nativo de 
@@ -53,7 +53,7 @@ export default function About() {
                         </h3>
                         <ul className="grid grid-cols-2 gap-3">
                             {skills.map((skill) => (
-                                <li key={skill} className="flex items-center gap-2 text-sm">
+                                <li key={skill} className="flex items-center gap-2 text-sm text-muted-foreground">
                                     <span className="text-accent text-lg">▹</span>
                                     {skill}
                                 </li>
@@ -66,7 +66,7 @@ export default function About() {
                     {highlights.map((item) => (
                         <div className="space-y-3 hover:scale-105 transition-transform duration-300">
                             <h3 className=" font-semibold">{item.title}</h3>
-                            <p className=" text-sm leading-relaxed">{item.description}</p>
+                            <p className=" text-sm text-muted-foreground leading-relaxed">{item.description}</p>
                         </div>
                     ))}
                 </div>
