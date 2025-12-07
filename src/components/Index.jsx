@@ -1,7 +1,7 @@
 import "../App.css"
 import { ArrowRight, Github, Linkedin, Smartphone } from "lucide-react"
 
-export default function Main() {
+export default function Index() {
     return (
         <section className="min-h-screen flex items-center px-6 justify-center">
             <div className="space-y-8">
