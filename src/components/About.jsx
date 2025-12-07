@@ -32,7 +32,7 @@ export default function About() {
                         <span className="font-mono text-lg mr-2 text-primary">01.</span>
                         Sobre mí
                     </h2>
-                    <div className="h-px from-primary via-secondary to-transparent max-w-md" />
+                    <div className="h-px bg-linear-to-r from-primary via-secondary to-transparent max-w-md" />
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-12 mb-16">
