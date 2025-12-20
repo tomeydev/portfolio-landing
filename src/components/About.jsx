@@ -1,4 +1,6 @@
 import "../App.css";
+import Icon from "./Icon";
+import { Award, Globe, Smartphone, Zap } from "lucide-react";
 
 export default function About() {
     
@@ -18,10 +20,26 @@ export default function About() {
     ];
 
     const highlights = [
-        { title: "Desarrollo Nativo", description: "Experto en iOS y Android con código nativo optimizado" },
-        { title: "Cross-Platform", description: "Construcción de apps híbridas con React Native y Flutter" },
-        { title: "Diseño Intuitivo", description: "Creación de interfaces móviles atractivas y fáciles de usar" },
-        { title: "Rendimiento", description: "Optimización para velocidad y eficiencia en dispositivos móviles" },
+        { 
+            icon: Smartphone,
+            title: "Desarrollo Nativo", 
+            description: "Experto en iOS y Android con código nativo optimizado" 
+        },
+        { 
+            icon: Zap,
+            title: "Cross-Platform", 
+            description: "Construcción de apps híbridas con React Native y Flutter" 
+        },
+        { 
+            icon: Globe,
+            title: "Diseño Intuitivo", 
+            description: "Creación de interfaces móviles atractivas y fáciles de usar" 
+        },
+        { 
+            icon: Award,
+            title: "Rendimiento", 
+            description: "Optimización para velocidad y eficiencia en dispositivos móviles" 
+        },
     ]
 
     return(
@@ -65,6 +83,9 @@ export default function About() {
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {highlights.map((item) => (
                         <div className="space-y-3 hover:scale-105 transition-transform duration-300">
+                            <Icon>
+                                <item.icon />
+                            </Icon>
                             <h3 className=" font-semibold">{item.title}</h3>
                             <p className=" text-sm text-muted-foreground leading-relaxed">{item.description}</p>
                         </div>
