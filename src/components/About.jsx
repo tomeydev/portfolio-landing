@@ -1,4 +1,5 @@
 import "../App.css";
+import Title from "./Title";
 import Icon from "./Icon";
 import { Award, Globe, Smartphone, Zap } from "lucide-react";
 
@@ -45,13 +46,7 @@ export default function About() {
     return(
         <section id="about" className="py-24 px-6 lg:px-8 relative overflow-hidden">
             <div className="max-w-6xl mx-auto">
-                <div className="space-y-4 mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold">
-                        <span className="font-mono text-lg mr-2 text-primary">01.</span>
-                        Sobre mí
-                    </h2>
-                    <div className="h-px bg-linear-to-r from-primary via-secondary to-transparent max-w-md" />
-                </div>
+                <Title title="Sobre mí" number="01" />
 
                 <div className="grid md:grid-cols-2 gap-12 mb-16">
                     <div>
