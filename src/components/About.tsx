@@ -2,10 +2,16 @@ import "../App.css";
 import Title from "./Title";
 import Icon from "./Icon";
 import { Award, Globe, Smartphone, Zap } from "lucide-react";
+import { ComponentType, ReactElement } from "react";
+
+type Highlight = {
+    icon: ComponentType<any>
+    title: string
+    description: string
+}
 
 export default function About() {
-    
-    const skills = [
+    const skills: string[] = [
         "Swift & SwiftUI",
         "Kotlin & Jetpack Compose",
         "React Native",
@@ -20,30 +26,30 @@ export default function About() {
         "Performance Optimization",
     ];
 
-    const highlights = [
-        { 
+    const highlights: Highlight[] = [
+        {
             icon: Smartphone,
-            title: "Desarrollo Nativo", 
-            description: "Experto en iOS y Android con código nativo optimizado" 
+            title: "Desarrollo Nativo",
+            description: "Experto en iOS y Android con código nativo optimizado",
         },
-        { 
+        {
             icon: Zap,
-            title: "Cross-Platform", 
-            description: "Construcción de apps híbridas con React Native y Flutter" 
+            title: "Cross-Platform",
+            description: "Construcción de apps híbridas con React Native y Flutter",
         },
-        { 
+        {
             icon: Globe,
-            title: "Diseño Intuitivo", 
-            description: "Creación de interfaces móviles atractivas y fáciles de usar" 
+            title: "Diseño Intuitivo",
+            description: "Creación de interfaces móviles atractivas y fáciles de usar",
         },
-        { 
+        {
             icon: Award,
-            title: "Rendimiento", 
-            description: "Optimización para velocidad y eficiencia en dispositivos móviles" 
+            title: "Rendimiento",
+            description: "Optimización para velocidad y eficiencia en dispositivos móviles",
         },
-    ]
+    ];
 
-    return(
+    return (
         <section id="about" className="py-24 px-6 lg:px-8 relative overflow-hidden">
             <div className="max-w-6xl mx-auto">
                 <Title title="Sobre mí" number="01" />
@@ -76,15 +82,17 @@ export default function About() {
                 </div>
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {highlights.map((item) => (
-                        <div className="space-y-3 hover:scale-105 transition-transform duration-300">
-                            <Icon>
-                                <item.icon />
-                            </Icon>
-                            <h3 className=" font-semibold">{item.title}</h3>
-                            <p className=" text-sm text-muted-foreground leading-relaxed">{item.description}</p>
-                        </div>
-                    ))}
+                    {highlights.map((item) => {
+                        return (
+                            <div key={item.title} className="space-y-3 hover:scale-105 transition-transform duration-300">
+                                <Icon>
+                                    <item.icon />
+                                </Icon>
+                                <h3 className=" font-semibold">{item.title}</h3>
+                                <p className=" text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
         </section>

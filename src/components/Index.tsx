@@ -1,5 +1,6 @@
 import "../App.css"
 import { ArrowRight, Github, Linkedin, Smartphone } from "lucide-react"
+import { ReactElement } from "react"
 
 export default function Index() {
     return (
@@ -7,8 +8,8 @@ export default function Index() {
             <div className="space-y-8">
                 <div className="space-y-4">
                     <p className="font-mono text-sm flex text-primary items-center gap-2">
-                    <Smartphone className="h-4 w-4"/>
-                    Hola, soy
+                        <Smartphone className="h-4 w-4" />
+                        Hola, soy
                     </p>
                     <h1 className="text-5xl md:text-7xl font-bold text-balance">Pablo Tomey</h1>
                     <h2 className="text-3xl md:text-5xl font-bold text-balance gradient-text">Creando experiencias moviles excepcionales</h2>
@@ -40,5 +41,5 @@ export default function Index() {
                 </div>
             </div>
         </section>
-    );
+    )
 }

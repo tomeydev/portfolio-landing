@@ -1,7 +1,10 @@
 import "../App.css";
+import { ReactElement } from "react"
+
+type NavItem = { label: string; href: string };
 
 export default function Navigation() {
-    const navItems = [
+    const navItems: NavItem[] = [
         { label: "Sobre mí", href: "#about" },
         { label: "Experiencia", href: "#experience" },
         { label: "Proyectos", href: "#projects" },
@@ -15,8 +18,8 @@ export default function Navigation() {
                     <a href="#" className="font-mono text-lg font-bold text-primary">{"<tomey.dev/>"}</a>
                     <div className="hidden md:flex items-center gap-8">
                         {navItems.map((item) => (
-                            <a 
-                                key={item.label} 
+                            <a
+                                key={item.label}
                                 href={item.href}
                                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                             >
