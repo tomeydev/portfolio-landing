@@ -1,7 +1,7 @@
 import '../App.css'
 import { Smartphone, ExternalLink } from 'lucide-react'
 import Icon from './Icon'
-import { Experience } from '../types/experience'
+import { Experience } from '../types/Experience'
 
 type ExperienceItemProps = {
     experience: Experience
@@ -30,7 +30,7 @@ export default function ExperienceItem({experience}: ExperienceItemProps) {
                     <p className="text-muted-foreground leading-relaxed">{experience.description}</p>
 
                     <div className="mt-8 flex flex-wrap gap-2">
-                        {experience.tecnologies.map((tech) => (
+                        {experience.technologies.map((tech) => (
                             <span key={tech} className="px-2 font-mono text-xs text-primary">{tech}</span>
                         ))}
                     </div>

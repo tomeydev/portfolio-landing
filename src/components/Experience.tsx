@@ -1,17 +1,17 @@
 import "../App.css"
 import Title from "./Title"
-import { Experience as ExperienceProp } from "../types/experience"
+import { Experience as ExperienceType } from "../types/Experience"
 import ExperienceItem from "./ExperienceItem"
 
 export default function Experience() {
-    const experiences: ExperienceProp[] = [
+    const experiences: ExperienceType[] = [
         {
             role: "Mobile Engineer",
             company: "Tech Solutions",
             companyUrl: "https://google.com",
             period: "Jan 2020 - Present",
             description:"Desarrollé aplicaciones móviles nativas y cross-platform, mejorando la experiencia del usuario y optimizando el rendimiento.",
-            tecnologies: ["Swift", "Kotlin", "React Native", "Flutter"],
+            technologies: ["Swift", "Kotlin", "React Native", "Flutter"],
         },
     ]
 
