@@ -4,5 +4,5 @@ export interface Experience {
     companyUrl: string;
     period: string;
     description: string;
-    tecnologies: string[];
+    technologies: string[];
 }
