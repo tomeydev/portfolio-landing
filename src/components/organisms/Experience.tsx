@@ -1,7 +1,7 @@
-import "../App.css"
-import Title from "./Title"
-import { Experience as ExperienceType } from "../types/Experience"
-import ExperienceItem from "./ExperienceItem"
+import "../../App.css"
+import Title from "../atoms/Title"
+import { Experience as ExperienceType } from "../../types/Experience"
+import ExperienceItem from "../molecules/ExperienceItem"
 
 export default function Experience() {
     const experiences: ExperienceType[] = [

@@ -1,7 +1,7 @@
-import '../App.css'
+import '../../App.css'
 import { Smartphone, ExternalLink } from 'lucide-react'
-import Icon from './Icon'
-import { Experience } from '../types/Experience'
+import Icon from '../atoms/Icon'
+import { Experience } from '../../types/Experience'
 
 type ExperienceItemProps = {
     experience: Experience

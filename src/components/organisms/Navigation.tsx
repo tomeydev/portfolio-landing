@@ -1,4 +1,4 @@
-import "../App.css";
+import "../../App.css";
 
 type NavItem = { label: string; href: string };
 

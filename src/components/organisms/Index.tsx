@@ -1,4 +1,4 @@
-import "../App.css"
+import "../../App.css"
 import { ArrowRight, Github, Linkedin, Smartphone } from "lucide-react"
 
 export default function Index() {

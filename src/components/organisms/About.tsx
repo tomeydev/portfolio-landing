@@ -1,6 +1,6 @@
-import "../App.css";
-import Title from "./Title";
-import Icon from "./Icon";
+import "../../App.css";
+import Title from "../atoms/Title";
+import Icon from "../atoms/Icon";
 import { Award, Globe, Smartphone, Zap } from "lucide-react";
 import { ComponentType } from "react";
 

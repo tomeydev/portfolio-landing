@@ -1,8 +1,8 @@
 import './App.css'
-import About from './components/About'
-import Index from './components/Index'
-import Experience from './components/Experience'
-import Navigation from './components/Navigation'
+import About from './components/organisms/About'
+import Index from './components/organisms/Index'
+import Experience from './components/organisms/Experience'
+import Navigation from './components/organisms/Navigation'
 
 function App() {
   return (
