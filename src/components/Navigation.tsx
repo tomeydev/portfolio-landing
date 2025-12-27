@@ -1,5 +1,4 @@
 import "../App.css";
-import { ReactElement } from "react"
 
 type NavItem = { label: string; href: string };
 

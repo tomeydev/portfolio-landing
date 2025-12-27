@@ -1,6 +1,5 @@
 import "../App.css"
 import { ArrowRight, Github, Linkedin, Smartphone } from "lucide-react"
-import { ReactElement } from "react"
 
 export default function Index() {
     return (

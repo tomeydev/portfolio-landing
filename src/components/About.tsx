@@ -2,7 +2,7 @@ import "../App.css";
 import Title from "./Title";
 import Icon from "./Icon";
 import { Award, Globe, Smartphone, Zap } from "lucide-react";
-import { ComponentType, ReactElement } from "react";
+import { ComponentType } from "react";
 
 type Highlight = {
     icon: ComponentType<any>
@@ -82,17 +82,15 @@ export default function About() {
                 </div>
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {highlights.map((item) => {
-                        return (
-                            <div key={item.title} className="space-y-3 hover:scale-105 transition-transform duration-300">
-                                <Icon>
-                                    <item.icon />
-                                </Icon>
-                                <h3 className=" font-semibold">{item.title}</h3>
-                                <p className=" text-sm text-muted-foreground leading-relaxed">{item.description}</p>
-                            </div>
-                        )
-                    })}
+                    {highlights.map((item) => (
+                        <div key={item.title} className="space-y-3 hover:scale-105 transition-transform duration-300">
+                            <Icon>
+                                <item.icon />
+                            </Icon>
+                            <h3 className=" font-semibold">{item.title}</h3>
+                            <p className=" text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
