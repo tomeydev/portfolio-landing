@@ -1,6 +1,7 @@
 import "../../App.css"
 import { ArrowRight, Github, Linkedin, Smartphone } from "lucide-react"
-
+import PrimaryButton from "../atoms/PrimaryButton"
+ 
 export default function Index() {
     return (
         <section className="min-h-screen flex items-center px-6 justify-center">
@@ -18,10 +19,7 @@ export default function Index() {
                     cross-platform que combinan diseño elegante con rendimiento excepcional, llegando a millones de usuarios.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                    <button>
-                        <a href="#projects">Ver mis apps</a>
-                        <ArrowRight className="inline-block h-4 w-4 ml-2" />
-                    </button>
+                    <PrimaryButton href="#projects" text="Ver mis apps" trailingIcon={<ArrowRight />} />
                     <button>
                         <a href="#contact">Contactar</a>   
                     </button>
