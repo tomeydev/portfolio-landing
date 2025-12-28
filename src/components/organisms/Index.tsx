@@ -1,6 +1,7 @@
 import "../../App.css"
 import { ArrowRight, Github, Linkedin, Smartphone } from "lucide-react"
 import PrimaryButton from "../atoms/PrimaryButton"
+import OutlinedButton from "../atoms/OutlinedButton"
  
 export default function Index() {
     return (
@@ -20,9 +21,7 @@ export default function Index() {
                 </p>
                 <div className="flex flex-wrap gap-4">
                     <PrimaryButton href="#projects" text="Ver mis apps" trailingIcon={<ArrowRight />} />
-                    <button>
-                        <a href="#contact">Contactar</a>   
-                    </button>
+                    <OutlinedButton href="#contact" text="Contactar" />
                 </div>
                 <div className="flex flex-wrap gap-4 pt-4">
                     <div className="text-sm font-medium py-2">Android • Kotlin • Jetpack</div>
