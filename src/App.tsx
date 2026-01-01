@@ -3,6 +3,7 @@ import About from './components/organisms/About'
 import Index from './components/organisms/Index'
 import Experience from './components/organisms/Experience'
 import Navigation from './components/organisms/Navigation'
+import Projects from './components/organisms/Projects'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Index />
       <About />
       <Experience />
+      <Projects />
     </>
   )
 }
