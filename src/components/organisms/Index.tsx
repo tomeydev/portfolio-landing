@@ -5,7 +5,7 @@ import OutlinedButton from "../atoms/OutlinedButton"
  
 export default function Index() {
     return (
-        <section className="min-h-screen flex items-center px-6 justify-center">
+        <section className="min-h-screen flex items-center px-6 lg:px-8 pt-16 justify-center relative overflow-hidden">
             <div className="space-y-8">
                 <div className="space-y-4">
                     <p className="font-mono text-sm flex text-primary items-center gap-2">
