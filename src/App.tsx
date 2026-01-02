@@ -4,6 +4,7 @@ import Index from './components/organisms/Index'
 import Experience from './components/organisms/Experience'
 import Navigation from './components/organisms/Navigation'
 import Projects from './components/organisms/Projects'
+import Contact from './components/organisms/Contact'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Experience />
       <Projects />
+      <Contact />
     </>
   )
 }
