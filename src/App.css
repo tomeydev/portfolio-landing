@@ -11,6 +11,8 @@
   --accent: oklch(0.7 0.18 160);
   --card: oklch(1 0 0);
   --radius: 1.25rem;
+  --border: oklch(0.9 0.01 230);
+  --ring: oklch(0.55 0.22 230);
 }
 
 .dark {
@@ -21,6 +23,8 @@
   --secondary: oklch(0.75 0.2 190);
   --accent: oklch(0.8 0.18 160);
   --card: oklch(0.14 0.01 230);
+  --border: oklch(0.25 0.02 230);
+  --ring: oklch(0.7 0.22 230);
 }
 
 @theme inline {
@@ -32,9 +36,14 @@
   --color-accent: var(--accent);
   --color-card: var(--card);
   --radius-lg: var(--radius);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
 }
 
 @layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
   body {
     @apply bg-background text-foreground;
   }
@@ -52,12 +61,14 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
   .gradient-border {
     position: relative;
     background: var(--color-card);
     border-radius: var(--radius-lg);
   }
-    .gradient-border::before {
+
+  .gradient-border::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -68,5 +79,26 @@
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
+  }
+
+  .nav-overlay {
+    position: fixed;
+    --nav-bg-opacity: 0;
+  }
+
+  .nav-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+    opacity: var(--nav-bg-opacity);
+    z-index: -1;
+    transition: opacity .22s ease, backdrop-filter .22s ease;
+    pointer-events: none;
+  }
+
+  .nav-overlay.scrolled::before {
+    --nav-bg-opacity: .8;
   }
 }
