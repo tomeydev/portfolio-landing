@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import "../../App.css";
+import MenuButton from "../atoms/MenuButton";   
 
 type NavItem = { label: string; href: string };
 
 export default function Navigation() {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -39,7 +41,27 @@ export default function Navigation() {
                             </a>
                         ))}
                     </div>
+                    <MenuButton 
+                        isMobileMenuOpen={isMobileMenuOpen} 
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
+                    />
                 </div>
+                    {isMobileMenuOpen && (
+                        <div className="md:hidden py-4 border-t border-border">
+                            <div className="flex flex-col gap-4">
+                                {navItems.map((item) => (
+                                    <a
+                                        key={item.label}
+                                        href={item.href}
+                                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                                        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                                    >
+                                        {item.label}
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+                    )}
             </div>
         </nav>
     );
