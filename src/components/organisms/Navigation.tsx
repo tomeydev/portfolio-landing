@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "../../App.css";
+import items from "../../data/navigation.json";
+import { NavItem } from "../../types/NavItem";
 import MenuButton from "../atoms/MenuButton";   
-
-type NavItem = { label: string; href: string };
 
 export default function Navigation() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -16,12 +16,7 @@ export default function Navigation() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, [])
 
-    const navItems: NavItem[] = [
-        { label: "Sobre mí", href: "#about" },
-        { label: "Experiencia", href: "#experience" },
-        { label: "Proyectos", href: "#projects" },
-        { label: "Contacto", href: "#contact" },
-    ];
+    const navItems: NavItem[] = items;
 
     return (
         <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-overlay
