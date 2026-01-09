@@ -1,0 +1,44 @@
+{
+    "resume": "Mobile Engineer especializado en iOS y Android. Construyo aplicaciones nativas y cross-platform que combinan diseño elegante con rendimiento excepcional, llegando a millones de usuarios.",
+    "bio": "Mi pasión por el desarrollo móvil comenzó hace más de 6 años cuando publiqué mi primera app en la App Store. Desde entonces, he creado experiencias móviles para startups innovadoras y empresas Fortune 500. Me especializo en construir aplicaciones móviles que los usuarios aman usar. \n\nCombino desarrollo nativo de alto rendimiento con diseños intuitivos que se sienten naturales en cada plataforma. Actualmente trabajo como Senior Mobile Engineer en una startup fintech, donde lidero el desarrollo de apps iOS y Android que procesan millones de transacciones diarias.",
+    "skills": [
+        "Swift & SwiftUI",
+        "Kotlin & Jetpack Compose",
+        "React Native",
+        "Flutter",
+        "iOS SDK",
+        "Android SDK",
+        "Firebase",
+        "REST & GraphQL",
+        "CI/CD",
+        "App Store Optimization",
+        "Mobile UI/UX",
+        "Performance Optimization"
+    ],
+    "highlights": [
+        {
+            "icon": "Smartphone",
+            "title": "Desarrollo Nativo",
+            "description": "Experto en iOS y Android con código nativo optimizado"
+        },
+        {
+            "icon": "Zap",
+            "title": "Cross-Platform",
+            "description": "Construcción de apps híbridas con React Native y Flutter"
+        },
+        {
+            "icon": "Globe",
+            "title": "Diseño Intuitivo",
+            "description": "Creación de interfaces móviles atractivas y fáciles de usar"
+        },
+        {
+            "icon": "Award",
+            "title": "Rendimiento",
+            "description": "Optimización para velocidad y eficiencia en dispositivos móviles"
+        }
+    ],
+    "socialLinks": {
+        "github": "https://github.com/tomeydev",
+        "linkedin": "https://www.linkedin.com/in/pablo-tomey-paylamilla-3b218b54/"
+    }
+}

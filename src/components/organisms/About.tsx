@@ -1,53 +1,19 @@
 import "../../App.css";
 import Title from "../atoms/Title";
 import Icon from "../atoms/Icon";
-import { Award, Globe, Smartphone, Zap } from "lucide-react";
-import { ComponentType } from "react";
+import profileData from "../../data/profile.json";
+import { Award, Globe, LucideIcon, Smartphone, Zap } from "lucide-react";
+import { Profile } from "../../types/Profile";
 
-type Highlight = {
-    icon: ComponentType<any>
-    title: string
-    description: string
+const iconMap: Record<string, LucideIcon> = {
+    Smartphone: Smartphone,
+    Globe: Globe,
+    Zap: Zap,
+    Award: Award,
 }
 
 export default function About() {
-    const skills: string[] = [
-        "Swift & SwiftUI",
-        "Kotlin & Jetpack Compose",
-        "React Native",
-        "Flutter",
-        "iOS SDK",
-        "Android SDK",
-        "Firebase",
-        "REST & GraphQL",
-        "CI/CD",
-        "App Store Optimization",
-        "Mobile UI/UX",
-        "Performance Optimization",
-    ];
-
-    const highlights: Highlight[] = [
-        {
-            icon: Smartphone,
-            title: "Desarrollo Nativo",
-            description: "Experto en iOS y Android con código nativo optimizado",
-        },
-        {
-            icon: Zap,
-            title: "Cross-Platform",
-            description: "Construcción de apps híbridas con React Native y Flutter",
-        },
-        {
-            icon: Globe,
-            title: "Diseño Intuitivo",
-            description: "Creación de interfaces móviles atractivas y fáciles de usar",
-        },
-        {
-            icon: Award,
-            title: "Rendimiento",
-            description: "Optimización para velocidad y eficiencia en dispositivos móviles",
-        },
-    ];
+    const profile: Profile = profileData
 
     return (
         <section id="about" className="py-24 px-6 lg:px-8 relative overflow-hidden">
@@ -56,14 +22,7 @@ export default function About() {
 
                 <div className="grid md:grid-cols-2 gap-12 mb-16">
                     <div>
-                        <p className="text-muted-foreground leading-relaxed">
-                            Mi pasión por el desarrollo móvil comenzó hace más de 6 años cuando publiqué mi primera app en la App Store. 
-                            Desde entonces, he creado experiencias móviles para startups innovadoras y empresas Fortune 500.
-                            Me especializo en construir aplicaciones móviles que los usuarios aman usar. Combino desarrollo nativo de 
-                            alto rendimiento con diseños intuitivos que se sienten naturales en cada plataforma.
-                            Actualmente trabajo como Senior Mobile Engineer en una startup fintech, donde lidero el desarrollo de 
-                            apps iOS y Android que procesan millones de transacciones diarias.
-                        </p>
+                        <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{profileData.bio}</p>
                     </div>
                     <div className="space-y-2">
                         <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
@@ -71,7 +30,7 @@ export default function About() {
                             Stack Tecnológico
                         </h3>
                         <ul className="grid grid-cols-2 gap-3">
-                            {skills.map((skill) => (
+                            {profileData.skills.map((skill) => (
                                 <li key={skill} className="flex items-center gap-2 text-sm text-muted-foreground">
                                     <span className="text-accent text-lg">▹</span>
                                     {skill}
@@ -82,15 +41,18 @@ export default function About() {
                 </div>
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {highlights.map((item) => (
-                        <div key={item.title} className="space-y-3 hover:scale-105 transition-transform duration-300">
-                            <Icon>
-                                <item.icon />
-                            </Icon>
-                            <h3 className=" font-semibold">{item.title}</h3>
-                            <p className=" text-sm text-muted-foreground leading-relaxed">{item.description}</p>
-                        </div>
-                    ))}
+                    {profile.highlights.map((highlight) => {
+                        const HighlightIcon = iconMap[highlight.icon] || Smartphone;
+                        return (
+                            <div key={highlight.title} className="space-y-3 hover:scale-105 transition-transform duration-300">
+                                <Icon>
+                                    <HighlightIcon />
+                                </Icon>
+                                <h3 className=" font-semibold">{highlight.title}</h3>
+                                <p className=" text-sm text-muted-foreground leading-relaxed">{highlight.description}</p>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </section>
