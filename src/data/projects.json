@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Project One",
+        "description": "An innovative mobile app that revolutionizes task management.",
+        "image": "/placeholder.svg",
+        "technologies": ["Android", "Kotlin", "Jetpack Compose"],
+        "repo": "https://github.com",
+        "demo": "https://example.com",
+        "plataform": "Android"
+    },
+    {
+        "name": "Project Two",
+        "description": "A cross-platform social networking app with real-time features.",
+        "image": "/placeholder.svg",
+        "technologies": ["iOS", "Swift", "SwiftUI", "Firebase"],
+        "repo": "https://github.com",
+        "demo": "https://example.com",
+        "plataform": "iOS"
+    }
+]
