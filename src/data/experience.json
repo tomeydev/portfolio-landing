@@ -1,0 +1,15 @@
+[
+    {
+        "role": "Senior Mobile Engineer",
+        "company": "Tech Solutions Inc.",
+        "companyUrl": "https://techsolutions.com",
+        "period": "Jan 2021 - Present",
+        "description": "Desarrollé aplicaciones móviles nativas y cross-platform, mejorando la experiencia del usuario y optimizando el rendimiento.",
+        "technologies": [
+            "Android",
+            "Kotlin",
+            "iOS",
+            "Swift"
+        ]
+    }
+]
