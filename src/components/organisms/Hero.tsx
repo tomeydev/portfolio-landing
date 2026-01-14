@@ -5,7 +5,7 @@ import OutlinedButton from "../atoms/OutlinedButton"
 import profileData from "../../data/profile.json";
 import { Profile } from "../../types/Profile";
  
-export default function Index() {
+export default function Hero() {
     const profile: Profile = profileData;
     
     return (

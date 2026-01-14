@@ -1,6 +1,6 @@
 import './App.css'
 import About from './components/organisms/About'
-import Index from './components/organisms/Index'
+import Hero from './components/organisms/Hero'
 import Experience from './components/organisms/Experience'
 import Navigation from './components/organisms/Navigation'
 import Projects from './components/organisms/Projects'
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Navigation />
-      <Index />
+      <Hero />
       <About />
       <Experience />
       <Projects />
