@@ -1,5 +1,24 @@
+# node modules and build output
 node_modules
+dist
+.pnpm-store
+
+# version control files
 .git
 .gitignore
-*.md
-dist
+
+# docker and configuration files
+Dockerfile
+nginx.conf
+.dockerignore
+.github
+
+# environment files
+.env
+.env.*
+!.env.example
+
+# logs and system files
+*.log
+.DS_Store
+thumbs.db
