@@ -22,7 +22,7 @@ export default function Contact() {
                     Si tienes una idea de app o necesitas un mobile engineer experimentado, hablemos.
                 </p>
                 <div className='flex flex-wrap items-center justify-center gap-4'>
-                    <PrimaryButton href="mailto:ptomey@gmail.com" leadingIcon={<Mail className='h-4 w-4' />} text="Enviar mensaje" />
+                    <PrimaryButton href="mailto:ptomey.dev@gmail.com" leadingIcon={<Mail className='h-4 w-4' />} text="Enviar mensaje" />
                     <OutlinedButton href="https://linkedin.com" leadingIcon={<Download className='h-4 w-4' />} text="Descargar CV" />
                 </div>
             </div>
