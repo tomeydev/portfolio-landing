@@ -2,8 +2,12 @@ import '../../App.css';
 import { Mail, MessageSquare, Download } from 'lucide-react';
 import PrimaryButton from '../atoms/PrimaryButton';
 import OutlinedButton from '../atoms/OutlinedButton';
+import profileData from "../../data/profile.json"
+import { Profile } from "../../types/Profile"
 
 export default function Contact() {
+    const profile: Profile = profileData;
+
     return(
         <section id='contact' className='py-24 px-6 lg:px-8 relative overflow-hidden'>
             <div className="absolute inset-0 -z-10">
@@ -22,12 +26,12 @@ export default function Contact() {
                     Si tienes una idea de app o necesitas un mobile engineer experimentado, hablemos.
                 </p>
                 <div className='flex flex-wrap items-center justify-center gap-4'>
-                    <PrimaryButton href="mailto:ptomey.dev@gmail.com" leadingIcon={<Mail className='h-4 w-4' />} text="Enviar mensaje" />
-                    <OutlinedButton href="https://linkedin.com" leadingIcon={<Download className='h-4 w-4' />} text="Descargar CV" />
+                    <PrimaryButton href={`mailto:${profile.email}`} leadingIcon={<Mail className='h-4 w-4' />} text="Enviar mensaje" />
+                    <OutlinedButton href={profile.socialLinks.linkedin} leadingIcon={<Download className='h-4 w-4' />} text="Ver LinkedIn" />
                 </div>
             </div>
             <footer className="mt-24 pt-8 pb-8 border-t border-gray-300 text-center">
-                <p className="text-sm text-muted-foreground">Diseñado y construido por Pablo Tomey</p>
+                <p className="text-sm text-muted-foreground">Diseñado y construido por {profile.fullName}</p>
                 <p className="text-xs text-muted-foreground mt-2">© 2026 Todos los derechos reservados</p>
             </footer>
         </section>
