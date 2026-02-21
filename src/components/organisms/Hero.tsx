@@ -16,8 +16,8 @@ export default function Hero() {
                         <Smartphone className="h-4 w-4" />
                         Hola, soy
                     </p>
-                    <h1 className="text-5xl md:text-7xl font-bold text-balance">Pablo Tomey</h1>
-                    <h2 className="text-3xl md:text-5xl font-bold text-balance gradient-text">Creando experiencias moviles excepcionales</h2>
+                    <h1 className="text-5xl md:text-7xl font-bold text-balance">{profile.fullName}</h1>
+                    <h2 className="text-3xl md:text-5xl font-bold text-balance gradient-text">{profile.title}</h2>
                 </div>
                 <p className=" text-lg text-muted-foreground max-w-2xl">{profile.resume}</p>
                 <div className="flex flex-wrap gap-4">
@@ -25,7 +25,7 @@ export default function Hero() {
                     <OutlinedButton href="#contact" text="Contactar" />
                 </div>
                 <div className="flex flex-wrap gap-4 pt-4">
-                    <div className="text-sm font-medium py-2">Android • Kotlin • Jetpack</div>
+                    <div className="text-sm font-medium py-2">Android • Kotlin • Jetpack Compose</div>
                     <div className="text-sm font-medium py-2">iOS • Swift • SwiftUI</div>
                 </div>
                 <div className="flex flex-wrap gap-4">
