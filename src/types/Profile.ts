@@ -1,6 +1,9 @@
 import { Highlight } from "./Highlight";
 
 export type Profile = {
+    fullName: string;
+    title: string;
+    email: string;
     resume: string;
     bio: string;
     skills: string[];

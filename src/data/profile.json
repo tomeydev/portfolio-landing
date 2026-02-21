@@ -1,40 +1,44 @@
 {
-    "resume": "Mobile Engineer especializado en iOS y Android. Construyo aplicaciones nativas y cross-platform que combinan diseño elegante con rendimiento excepcional, llegando a millones de usuarios.",
-    "bio": "Mi pasión por el desarrollo móvil comenzó hace más de 6 años cuando publiqué mi primera app en la App Store. Desde entonces, he creado experiencias móviles para startups innovadoras y empresas Fortune 500. Me especializo en construir aplicaciones móviles que los usuarios aman usar. \n\nCombino desarrollo nativo de alto rendimiento con diseños intuitivos que se sienten naturales en cada plataforma. Actualmente trabajo como Senior Mobile Engineer en una startup fintech, donde lidero el desarrollo de apps iOS y Android que procesan millones de transacciones diarias.",
+    "fullName": "Pablo Tomey",
+    "title": "Software Engineer Mobile | Especialista en Android & iOS proficient",
+    "email": "ptomey.dev@gmail.com",
+    "resume": "Construyendo experiencias digitales fluidas, escalables y centradas en el usuario. Con más de 6 años transformando ideas en código nativo, me especializo en el ecosistema Android (Kotlin).",
+    "bio": "Ingeniero de Software especializado en desarrollo mobile con más de 6 años de trayectoria. Experto en el ecosistema Android (Kotlin) y competente en el desarrollo de soluciones para iOS (Swift/SwiftUI). Mi enfoque se centra en construir aplicaciones escalables y de alto rendimiento bajo Clean Architecture. Poseo un trasfondo multidisciplinario que me otorga una adaptabilidad excepcional y una visión orientada a objetivos de negocio, combinando el rigor técnico con una mentalidad autodidacta y resolutiva.",
     "skills": [
-        "Swift & SwiftUI",
-        "Kotlin & Jetpack Compose",
-        "React Native",
-        "Flutter",
-        "iOS SDK",
+        "Kotlin & Java",
+        "Android Jetpack",
+        "Clean Architecture",
+        "SOLID",
+        "Unit Testing",
+        "Jetpack Compose",
         "Android SDK",
-        "Firebase",
-        "REST & GraphQL",
+        "Swift & SwiftUI",
+        "Git Flow",
         "CI/CD",
-        "App Store Optimization",
-        "Mobile UI/UX",
-        "Performance Optimization"
+        "Firebase",
+        "Metodología Scrum",
+        "Mobile UX/UI"
     ],
     "highlights": [
         {
             "icon": "Smartphone",
-            "title": "Desarrollo Nativo",
-            "description": "Experto en iOS y Android con código nativo optimizado"
+            "title": "Especialista Mobile",
+            "description": "Más de 6 años transformando ideas en código nativo"
         },
         {
             "icon": "Zap",
-            "title": "Cross-Platform",
-            "description": "Construcción de apps híbridas con React Native y Flutter"
-        },
-        {
-            "icon": "Globe",
-            "title": "Diseño Intuitivo",
-            "description": "Creación de interfaces móviles atractivas y fáciles de usar"
+            "title": "Arquitectura Limpia",
+            "description": "Enfoque en soluciones escalables y mantenibles"
         },
         {
             "icon": "Award",
             "title": "Rendimiento",
-            "description": "Optimización para velocidad y eficiencia en dispositivos móviles"
+            "description": "Aplicaciones de alto rendimiento orientadas a negocio"
+        },
+        {
+            "icon": "Globe",
+            "title": "Colaboración Ágil",
+            "description": "Integración efectiva en células ágiles multidisciplinarias"
         }
     ],
     "socialLinks": {
