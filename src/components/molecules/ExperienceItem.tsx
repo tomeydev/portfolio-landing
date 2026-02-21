@@ -13,6 +13,7 @@ export default function ExperienceItem({experience}: ExperienceItemProps) {
             <div className="grid md:grid-cols-[200px_1fr] gap-6 md:gap-12">
                 <div className="flex flex-col gap-4">
                     <div className="text-sm text-muted-foreground font-mono">{experience.period}</div>
+                    <div className="text-xs text-muted-foreground/80 font-mono italic">{experience.location}</div>
                     <Icon>
                         <Smartphone />
                     </Icon>
