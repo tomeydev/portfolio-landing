@@ -1,6 +1,6 @@
 import '../../App.css';
 import { Project } from '../../types/Project';
-import { Smartphone, Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink, Globe, Smartphone, LucideIcon } from 'lucide-react';
 import OutlinedButton from '../atoms/OutlinedButton';
 import PrimaryButton from '../atoms/PrimaryButton';
 
@@ -8,7 +8,13 @@ type ProjectItemProps = {
     project: Project
 }
 
+const iconMap: Record<string, LucideIcon> = {
+    Smartphone: Smartphone,
+    Globe: Globe,
+}
+
 export default function ProjectItem({ project }: ProjectItemProps) {
+    const PlatformIcon = iconMap[project.platformIcon] || Globe;
     return (
         <div className='group overflow-hidden bg-card shadow-sm rounded-xl hover:scale-[1.02] transition-all duration-300'>
             <div className='relative aspect-video overflow-hidden'>
@@ -22,8 +28,8 @@ export default function ProjectItem({ project }: ProjectItemProps) {
                 <h3 className='text-xl font-semibold gradient-text'>{project.name}</h3>
                 <p className='text-sm text-muted-foreground leading-relaxed'>{project.description}</p>
                 <div className='flex items-center gap-1'>
-                    <Smartphone className='w-3 h-3' />
-                    <span className='text-xs text-muted-foreground'>2M+ descargas</span>
+                    <PlatformIcon className='w-3 h-3' />
+                    <span className='text-xs text-muted-foreground'>{project.platform}</span>
                 </div>
                 <div className='flex flex-wrap gap-4'>
                     {project.technologies.map((tech) => (
