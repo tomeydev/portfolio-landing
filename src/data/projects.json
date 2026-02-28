@@ -1,20 +1,17 @@
 [
     {
-        "name": "Project One",
-        "description": "An innovative mobile app that revolutionizes task management.",
-        "image": "/placeholder.svg",
-        "technologies": ["Android", "Kotlin", "Jetpack Compose"],
-        "repo": "https://github.com",
-        "demo": "https://example.com",
-        "plataform": "Android"
-    },
-    {
-        "name": "Project Two",
-        "description": "A cross-platform social networking app with real-time features.",
-        "image": "/placeholder.svg",
-        "technologies": ["iOS", "Swift", "SwiftUI", "Firebase"],
-        "repo": "https://github.com",
-        "demo": "https://example.com",
-        "plataform": "iOS"
+        "name": "Portfolio Landing",
+        "description": "Landing page profesional diseñada para mobile engineers, construida con React, TypeScript y Tailwind CSS. Incluye secciones dinámicas para experiencia laboral, proyectos y contacto, con un diseño moderno optimizado para rendimiento.",
+        "image": "/landing-mockup.png",
+        "technologies": [
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Vite",
+            "Lucide Icons"
+        ],
+        "repo": "https://github.com/tomeydev/portfolio-landing",
+        "demo": "https://tomeydev.com",
+        "plataform": "Web"
     }
 ]
