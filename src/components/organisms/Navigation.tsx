@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import "../../App.css";
 import items from "../../data/navigation.json";
 import { NavItem } from "../../types/NavItem";
-import MenuButton from "../atoms/MenuButton";   
+import MenuButton from "../atoms/MenuButton";
+import ThemeToggle from "../atoms/ThemeToggle";   
 
 export default function Navigation() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -36,10 +37,13 @@ export default function Navigation() {
                             </a>
                         ))}
                     </div>
-                    <MenuButton 
-                        isMobileMenuOpen={isMobileMenuOpen} 
-                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
-                    />
+                    <div className="flex items-center gap-4">
+                        <ThemeToggle />
+                        <MenuButton 
+                            isMobileMenuOpen={isMobileMenuOpen} 
+                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
+                        />
+                    </div>
                 </div>
                 {isMobileMenuOpen && (
                     <div className="md:hidden py-4 border-t border-border">
@@ -54,6 +58,9 @@ export default function Navigation() {
                                     {item.label}
                                 </a>
                             ))}
+                            <div className="pt-4 border-t border-border">
+                                <ThemeToggle />
+                            </div>
                         </div>
                     </div>
                 )}
