@@ -5,5 +5,6 @@ export interface Project {
     technologies: string[];
     repo: string;
     demo: string;
+    platformIcon: string;
     platform: string;
 }
