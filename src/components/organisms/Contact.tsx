@@ -1,5 +1,5 @@
 import '../../App.css';
-import { Mail, MessageSquare, Download } from 'lucide-react';
+import { Mail, MessageSquare, Linkedin } from 'lucide-react';
 import PrimaryButton from '../atoms/PrimaryButton';
 import OutlinedButton from '../atoms/OutlinedButton';
 import profileData from "../../data/profile.json"
@@ -27,7 +27,7 @@ export default function Contact() {
                 </p>
                 <div className='flex flex-wrap items-center justify-center gap-4'>
                     <PrimaryButton href={`mailto:${profile.email}`} leadingIcon={<Mail className='h-4 w-4' />} text="Enviar mensaje" />
-                    <OutlinedButton href={profile.socialLinks.linkedin} leadingIcon={<Download className='h-4 w-4' />} text="Ver LinkedIn" />
+                    <OutlinedButton href={profile.socialLinks.linkedin} leadingIcon={<Linkedin className='h-4 w-4' />} text="Ver LinkedIn" />
                 </div>
             </div>
             <footer className="mt-24 pt-8 pb-8 border-t border-gray-300 text-center">
