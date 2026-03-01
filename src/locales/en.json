@@ -1,0 +1,165 @@
+{
+  "navigation": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "cta_projects": "View my apps",
+    "cta_contact": "Get in touch",
+    "stack_mobile": "Android • Kotlin • Jetpack Compose",
+    "stack_web": "iOS • Swift • SwiftUI"
+  },
+  "about": {
+    "title": "About",
+    "tech_stack": "Tech Stack"
+  },
+  "experience": {
+    "section_title": "Experience"
+  },
+  "projects": {
+    "section_title": "Featured Apps",
+    "view_code": "Code",
+    "view_demo": "View Demo"
+  },
+  "contact": {
+    "section_label": "04. What's next?",
+    "title": "Let's build something amazing",
+    "description": "I'm available for mobile development projects, technical consulting, and collaborations. If you have an app idea or need an experienced mobile engineer, let's talk.",
+    "cta_email": "Send message",
+    "cta_linkedin": "View LinkedIn",
+    "footer_credit": "Designed and built by",
+    "footer_copyright": "© 2026 All rights reserved"
+  },
+  "theme_toggle": {
+    "dark": "Switch to dark theme",
+    "light": "Switch to light theme"
+  },
+  "language_toggle": {
+    "label": "Change language"
+  },
+  "profile": {
+    "fullName": "Pablo Tomey",
+    "title": "Software Engineer Mobile | iOS & Android Specialist",
+    "email": "ptomey.dev@gmail.com",
+    "resume": "Building fluid, scalable, user-centered digital experiences. With over 6 years transforming ideas into native code, I specialize in the Android (Kotlin) ecosystem.",
+    "bio": "Software Engineer specialized in mobile development with over 6 years of experience. Expert in the Android (Kotlin) ecosystem and competent in iOS (Swift/SwiftUI) solutions. My approach focuses on building scalable, high-performance applications under Clean Architecture. I bring a multidisciplinary background that gives me exceptional adaptability and a business-oriented vision, combining technical rigor with a self-taught and resourceful mindset.",
+    "skills": [
+      "Kotlin & Java",
+      "Android Jetpack",
+      "Clean Architecture",
+      "SOLID",
+      "Unit Testing",
+      "Jetpack Compose",
+      "Android SDK",
+      "Swift & SwiftUI",
+      "Git Flow",
+      "CI/CD",
+      "Firebase",
+      "Scrum Methodology",
+      "Mobile UX/UI"
+    ],
+    "highlights": [
+      {
+        "icon": "Smartphone",
+        "title": "Mobile Specialist",
+        "description": "6+ years transforming ideas into native code"
+      },
+      {
+        "icon": "Zap",
+        "title": "Clean Architecture",
+        "description": "Focus on scalable and maintainable solutions"
+      },
+      {
+        "icon": "Award",
+        "title": "Performance",
+        "description": "High-performance apps with business impact"
+      },
+      {
+        "icon": "Globe",
+        "title": "Agile Collaboration",
+        "description": "Effective integration in multidisciplinary teams"
+      }
+    ]
+  },
+  "experienceData": {
+    "items": [
+      {
+        "role": "Android Developer",
+        "company": "Mach - Banco de crédito e inversiones",
+        "companyUrl": "https://www.somosmach.com",
+        "location": "Santiago, Chile",
+        "period": "Jun 2022 - Present",
+        "description": "Actively collaborate in multidisciplinary agile teams, integrating critical features into the Mach application. Implemented technical solutions under Clean Architecture and Kotlin, working hand-in-hand with Product and Backend teams to ensure seamless integration of financial services.",
+        "technologies": [
+          "Android",
+          "Kotlin",
+          "Clean Architecture",
+          "CI/CD"
+        ]
+      },
+      {
+        "role": "Android Developer",
+        "company": "Open World Spa",
+        "companyUrl": "https://openworld.cl",
+        "location": "Santiago, Chile",
+        "period": "Jan 2021 - Jun 2022",
+        "description": "Worked with the Research and Development team to create native Android applications linked to specialized hardware. Integrated Bluetooth and IoT communication protocols for real-time health data monitoring.",
+        "technologies": [
+          "Android",
+          "Bluetooth",
+          "IoT",
+          "HealthTech"
+        ]
+      },
+      {
+        "role": "Android Developer",
+        "company": "Open Wireless Laboratories",
+        "companyUrl": "https://owl.cl",
+        "location": "Santiago, Chile",
+        "period": "Oct 2020 - Jan 2021",
+        "description": "Integrated into critical-phase projects, contributing to maintenance and development of new features for a diverse client portfolio. Collaborated on incident resolution and performance improvements.",
+        "technologies": [
+          "Android",
+          "Performance Optimization",
+          "Maintenance"
+        ]
+      },
+      {
+        "role": "Android Developer",
+        "company": "Proyecto Apprender",
+        "companyUrl": "https://apprender.cl",
+        "location": "Punta Arenas, Chile",
+        "period": "Jul 2018 - Jan 2020",
+        "description": "Developed a functional prototype of a social impact application focused on teaching reading to adults through mobile accessibility. Executed integration of voice recognition and audio command APIs.",
+        "technologies": [
+          "Android",
+          "Accessibility",
+          "Voice Recognition",
+          "Social Impact"
+        ]
+      }
+    ]
+  },
+  "projectsData": {
+    "items": [
+      {
+        "name": "Portfolio Landing",
+        "description": "Professional landing page designed for mobile engineers, built with React, TypeScript, and Tailwind CSS. Features dynamic sections for work experience, projects, and contact, with a modern design optimized for performance.",
+        "image": "/landing-mockup.png",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Vite",
+          "Lucide Icons"
+        ],
+        "repo": "https://github.com/tomeydev/portfolio-landing",
+        "demo": "https://tomeydev.com",
+        "plataform": "Web"
+      }
+    ]
+  }
+}

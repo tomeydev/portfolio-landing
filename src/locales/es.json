@@ -1,0 +1,165 @@
+{
+  "navigation": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "cta_projects": "Ver mis apps",
+    "cta_contact": "Contactar",
+    "stack_mobile": "Android • Kotlin • Jetpack Compose",
+    "stack_web": "iOS • Swift • SwiftUI"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "tech_stack": "Stack Tecnológico"
+  },
+  "experience": {
+    "section_title": "Experiencia"
+  },
+  "projects": {
+    "section_title": "Apps destacadas",
+    "view_code": "Código",
+    "view_demo": "Ver Demo"
+  },
+  "contact": {
+    "section_label": "04. ¿y ahora que sigue?",
+    "title": "Construyamos algo increíble",
+    "description": "Estoy disponible para proyectos de desarrollo móvil, consultoría técnica y colaboraciones. Si tienes una idea de app o necesitas un mobile engineer experimentado, hablemos.",
+    "cta_email": "Enviar mensaje",
+    "cta_linkedin": "Ver LinkedIn",
+    "footer_credit": "Diseñado y construido por",
+    "footer_copyright": "© 2026 Todos los derechos reservados"
+  },
+  "theme_toggle": {
+    "dark": "Cambiar a tema oscuro",
+    "light": "Cambiar a tema claro"
+  },
+  "language_toggle": {
+    "label": "Cambiar idioma"
+  },
+  "profile": {
+    "fullName": "Pablo Tomey",
+    "title": "Software Engineer Mobile | Especialista en Android & iOS proficient",
+    "email": "ptomey.dev@gmail.com",
+    "resume": "Construyendo experiencias digitales fluidas, escalables y centradas en el usuario. Con más de 6 años transformando ideas en código nativo, me especializo en el ecosistema Android (Kotlin).",
+    "bio": "Ingeniero de Software especializado en desarrollo mobile con más de 6 años de trayectoria. Experto en el ecosistema Android (Kotlin) y competente en el desarrollo de soluciones para iOS (Swift/SwiftUI). Mi enfoque se centra en construir aplicaciones escalables y de alto rendimiento bajo Clean Architecture. Poseo un trasfondo multidisciplinario que me otorga una adaptabilidad excepcional y una visión orientada a objetivos de negocio, combinando el rigor técnico con una mentalidad autodidacta y resolutiva.",
+    "skills": [
+      "Kotlin & Java",
+      "Android Jetpack",
+      "Clean Architecture",
+      "SOLID",
+      "Unit Testing",
+      "Jetpack Compose",
+      "Android SDK",
+      "Swift & SwiftUI",
+      "Git Flow",
+      "CI/CD",
+      "Firebase",
+      "Metodología Scrum",
+      "Mobile UX/UI"
+    ],
+    "highlights": [
+      {
+        "icon": "Smartphone",
+        "title": "Especialista Mobile",
+        "description": "Más de 6 años transformando ideas en código nativo"
+      },
+      {
+        "icon": "Zap",
+        "title": "Arquitectura Limpia",
+        "description": "Enfoque en soluciones escalables y mantenibles"
+      },
+      {
+        "icon": "Award",
+        "title": "Rendimiento",
+        "description": "Aplicaciones de alto rendimiento orientadas a negocio"
+      },
+      {
+        "icon": "Globe",
+        "title": "Colaboración Ágil",
+        "description": "Integración efectiva en células ágiles multidisciplinarias"
+      }
+    ]
+  },
+  "experienceData": {
+    "items": [
+      {
+        "role": "Desarrollador Android",
+        "company": "Mach - Banco de crédito e inversiones",
+        "companyUrl": "https://www.somosmach.com",
+        "location": "Santiago, Chile",
+        "period": "Jun 2022 - Actualidad",
+        "description": "Colaboro activamente en células ágiles multidisciplinarias, integrando nuevas funcionalidades críticas en la aplicación Mach. Implementé soluciones técnicas bajo Clean Architecture y Kotlin, trabajando de la mano con equipos de Producto y Backend para asegurar una integración fluida de servicios financieros.",
+        "technologies": [
+          "Android",
+          "Kotlin",
+          "Clean Architecture",
+          "CI/CD"
+        ]
+      },
+      {
+        "role": "Desarrollador Android",
+        "company": "Open World Spa",
+        "companyUrl": "https://openworld.cl",
+        "location": "Santiago, Chile",
+        "period": "Ene 2021 - Jun 2022",
+        "description": "Trabajé en conjunto con el equipo de Investigación y Desarrollo para la creación de aplicaciones nativas Android vinculadas a hardware especializado. Integré protocolos de comunicación Bluetooth e IoT para el monitoreo de datos de salud en tiempo real.",
+        "technologies": [
+          "Android",
+          "Bluetooth",
+          "IoT",
+          "HealthTech"
+        ]
+      },
+      {
+        "role": "Desarrollador Android",
+        "company": "Open Wireless Laboratories",
+        "companyUrl": "https://owl.cl",
+        "location": "Santiago, Chile",
+        "period": "Oct 2020 - Ene 2021",
+        "description": "Me integré en proyectos en etapas críticas, aportando en la mantención y el desarrollo de nuevas funcionalidades para una cartera diversa de clientes. Colaboré en la resolución de incidencias y mejoras de rendimiento.",
+        "technologies": [
+          "Android",
+          "Performance Optimization",
+          "Maintenance"
+        ]
+      },
+      {
+        "role": "Desarrollador Android",
+        "company": "Proyecto Apprender",
+        "companyUrl": "https://apprender.cl",
+        "location": "Punta Arenas, Chile",
+        "period": "Jul 2018 - Ene 2020",
+        "description": "Desarrollé el prototipo funcional de una aplicación de impacto social, enfocada en la enseñanza de lectura para adultos mediante accesibilidad móvil. Ejecuté la integración de APIs de reconocimiento de voz y comandos de audio.",
+        "technologies": [
+          "Android",
+          "Accessibility",
+          "Voice Recognition",
+          "Social Impact"
+        ]
+      }
+    ]
+  },
+  "projectsData": {
+    "items": [
+      {
+        "name": "Portfolio Landing",
+        "description": "Landing page profesional diseñada para mobile engineers, construida con React, TypeScript y Tailwind CSS. Incluye secciones dinámicas para experiencia laboral, proyectos y contacto, con un diseño moderno optimizado para rendimiento.",
+        "image": "/landing-mockup.png",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Vite",
+          "Lucide Icons"
+        ],
+        "repo": "https://github.com/tomeydev/portfolio-landing",
+        "demo": "https://tomeydev.com",
+        "plataform": "Web"
+      }
+    ]
+  }
+}
