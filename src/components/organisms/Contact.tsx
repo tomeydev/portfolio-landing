@@ -1,12 +1,14 @@
 import '../../App.css';
 import { Mail, MessageSquare, Linkedin } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import PrimaryButton from '../atoms/PrimaryButton';
 import OutlinedButton from '../atoms/OutlinedButton';
-import profileData from "../../data/profile.json"
-import { Profile } from "../../types/Profile"
 
 export default function Contact() {
-    const profile: Profile = profileData;
+    const { t } = useTranslation()
+    const email = t('profile.email')
+    const linkedinUrl = t('profile.socialLinks.linkedin')
+    const fullName = t('profile.fullName')
 
     return(
         <section id='contact' className='py-24 px-6 lg:px-8 relative overflow-hidden'>
@@ -17,22 +19,21 @@ export default function Contact() {
                 <div className='space-y-2'>
                     <p className='flex text-sm font-mono text-primary items-center justify-center gap-2'>
                         <MessageSquare className='h-4 w-4'/>
-                        04. ¿y ahora que sigue?
+                        {t('contact.section_label')}
                     </p>
-                    <h2 className='text-3xl md:text-5xl py-2 font-bold text-balance gradient-text'>Construyamos algo increíble</h2>
+                    <h2 className='text-3xl md:text-5xl py-2 font-bold text-balance gradient-text'>{t('contact.title')}</h2>
                 </div>
                 <p className='text-lg text-muted-foreground text-wrap leading-relaxed'>
-                    Estoy disponible para proyectos de desarrollo móvil, consultoría técnica y colaboraciones. 
-                    Si tienes una idea de app o necesitas un mobile engineer experimentado, hablemos.
+                    {t('contact.description')}
                 </p>
                 <div className='flex flex-wrap items-center justify-center gap-4'>
-                    <PrimaryButton href={`mailto:${profile.email}`} leadingIcon={<Mail className='h-4 w-4' />} text="Enviar mensaje" />
-                    <OutlinedButton href={profile.socialLinks.linkedin} leadingIcon={<Linkedin className='h-4 w-4' />} text="Ver LinkedIn" />
+                    <PrimaryButton href={`mailto:${email}`} leadingIcon={<Mail className='h-4 w-4' />} text={t('contact.cta_email')} />
+                    <OutlinedButton href={linkedinUrl} leadingIcon={<Linkedin className='h-4 w-4' />} text={t('contact.cta_linkedin')} />
                 </div>
             </div>
             <footer className="mt-24 pt-8 pb-8 border-t border-gray-300 text-center">
-                <p className="text-sm text-muted-foreground">Diseñado y construido por {profile.fullName}</p>
-                <p className="text-xs text-muted-foreground mt-2">© 2026 Todos los derechos reservados</p>
+                <p className="text-sm text-muted-foreground">{t('contact.footer_credit')} {fullName}</p>
+                <p className="text-xs text-muted-foreground mt-2">{t('contact.footer_copyright')}</p>
             </footer>
         </section>
     )

@@ -3,7 +3,8 @@ import "../../App.css";
 import items from "../../data/navigation.json";
 import { NavItem } from "../../types/NavItem";
 import MenuButton from "../atoms/MenuButton";
-import ThemeToggle from "../atoms/ThemeToggle";   
+import ThemeToggle from "../atoms/ThemeToggle";
+import LanguageToggle from "../atoms/LanguageToggle";
 
 export default function Navigation() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -39,6 +40,7 @@ export default function Navigation() {
                     </div>
                     <div className="flex items-center gap-4">
                         <ThemeToggle />
+                        <LanguageToggle />
                         <MenuButton 
                             isMobileMenuOpen={isMobileMenuOpen} 
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
@@ -58,8 +60,9 @@ export default function Navigation() {
                                     {item.label}
                                 </a>
                             ))}
-                            <div className="pt-4 border-t border-border">
+                            <div className="pt-4 border-t border-border flex gap-2">
                                 <ThemeToggle />
+                                <LanguageToggle />
                             </div>
                         </div>
                     </div>

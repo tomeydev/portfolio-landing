@@ -1,9 +1,8 @@
 import "../../App.css";
 import Title from "../atoms/Title";
 import Icon from "../atoms/Icon";
-import profileData from "../../data/profile.json";
+import { useTranslation } from "react-i18next";
 import { Award, Globe, LucideIcon, Smartphone, Zap } from "lucide-react";
-import { Profile } from "../../types/Profile";
 
 const iconMap: Record<string, LucideIcon> = {
     Smartphone: Smartphone,
@@ -13,24 +12,27 @@ const iconMap: Record<string, LucideIcon> = {
 }
 
 export default function About() {
-    const profile: Profile = profileData
+    const { t } = useTranslation()
+    const bio = t('profile.bio')
+    const skills = t('profile.skills', { returnObjects: true })
+    const highlights = t('profile.highlights', { returnObjects: true })
 
     return (
         <section id="about" className="py-24 px-6 lg:px-8 relative overflow-hidden">
             <div className="max-w-6xl mx-auto">
-                <Title title="Sobre mí" number="01" />
+                <Title title={t('about.title')} number="01" />
 
                 <div className="grid md:grid-cols-2 gap-12 mb-16">
                     <div>
-                        <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{profileData.bio}</p>
+                        <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{bio}</p>
                     </div>
                     <div className="space-y-2">
                         <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
                             <span className="text-2xl">🛠️</span>
-                            Stack Tecnológico
+                            {t('about.tech_stack')}
                         </h3>
                         <ul className="grid grid-cols-2 gap-3">
-                            {profileData.skills.map((skill) => (
+                            {(Array.isArray(skills) ? skills : []).map((skill: string) => (
                                 <li key={skill} className="flex items-center gap-2 text-sm text-muted-foreground">
                                     <span className="text-accent text-lg">▹</span>
                                     {skill}
@@ -41,7 +43,7 @@ export default function About() {
                 </div>
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {profile.highlights.map((highlight) => {
+                    {(Array.isArray(highlights) ? highlights : []).map((highlight: any) => {
                         const HighlightIcon = iconMap[highlight.icon] || Smartphone;
                         return (
                             <div key={highlight.title} className="space-y-3 hover:scale-105 transition-transform duration-300">
