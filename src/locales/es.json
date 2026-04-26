@@ -1,9 +1,23 @@
 {
   "navigation": {
-    "about": "Sobre mí",
-    "experience": "Experiencia",
-    "projects": "Proyectos",
-    "contact": "Contacto"
+    "items": [
+      {
+        "label": "Sobre mí",
+        "href": "#about"
+      },
+      {
+        "label": "Experiencia",
+        "href": "#experience"
+      },
+      {
+        "label": "Proyectos",
+        "href": "#projects"
+      },
+      {
+        "label": "Contacto",
+        "href": "#contact"
+      }
+    ]
   },
   "hero": {
     "greeting": "Hola, soy",

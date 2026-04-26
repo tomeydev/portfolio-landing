@@ -1,9 +1,23 @@
 {
   "navigation": {
-    "about": "About",
-    "experience": "Experience",
-    "projects": "Projects",
-    "contact": "Contact"
+    "items": [
+      {
+        "label": "About me",
+        "href": "#about"
+      },
+      {
+        "label": "Experience",
+        "href": "#experience"
+      },
+      {
+        "label": "Projects",
+        "href": "#projects"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ]
   },
   "hero": {
     "greeting": "Hi, I'm",

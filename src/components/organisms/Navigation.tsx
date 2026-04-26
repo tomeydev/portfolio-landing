@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "../../App.css";
 import items from "../../data/navigation.json";
 import { NavItem } from "../../types/NavItem";
+import { useTranslation } from "react-i18next";
 import MenuButton from "../atoms/MenuButton";
 import ThemeToggle from "../atoms/ThemeToggle";
 import LanguageToggle from "../atoms/LanguageToggle";
@@ -18,7 +19,10 @@ export default function Navigation() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, [])
 
-    const navItems: NavItem[] = items;
+    const { t } = useTranslation()
+    const navItemsData = t("navigation.items", { returnObjects: true });
+    const navItems: NavItem[] = Array.isArray(navItemsData) ? navItemsData : []
+
 
     return (
         <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-overlay
