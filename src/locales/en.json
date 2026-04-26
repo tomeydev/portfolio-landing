@@ -42,7 +42,7 @@
   },
   "profile": {
     "fullName": "Pablo Tomey",
-    "title": "Software Engineer Mobile | iOS & Android Specialist",
+    "title": "Software Engineer Mobile",
     "email": "ptomey.dev@gmail.com",
     "resume": "Building fluid, scalable, user-centered digital experiences. With over 6 years transforming ideas into native code, I specialize in the Android (Kotlin) ecosystem.",
     "bio": "Software Engineer specialized in mobile development with over 6 years of experience. Expert in the Android (Kotlin) ecosystem and competent in iOS (Swift/SwiftUI) solutions. My approach focuses on building scalable, high-performance applications under Clean Architecture. I bring a multidisciplinary background that gives me exceptional adaptability and a business-oriented vision, combining technical rigor with a self-taught and resourceful mindset.",
@@ -92,7 +92,7 @@
         "companyUrl": "https://www.somosmach.com",
         "location": "Santiago, Chile",
         "period": "Jun 2022 - Present",
-        "description": "Actively collaborate in multidisciplinary agile teams, integrating critical features into the Mach application. Implemented technical solutions under Clean Architecture and Kotlin, working hand-in-hand with Product and Backend teams to ensure seamless integration of financial services.",
+        "description": "Actively collaborate in multidisciplinary agile teams, integrating critical features into the Mach application. Currently, I'm implementing technical solutions under Clean Architecture and Kotlin, working hand-in-hand with Product and Backend teams to ensure seamless integration of financial services.",
         "technologies": [
           "Android",
           "Kotlin",
