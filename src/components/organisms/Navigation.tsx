@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "../../App.css";
-import items from "../../data/navigation.json";
 import { NavItem } from "../../types/NavItem";
 import { useTranslation } from "react-i18next";
 import MenuButton from "../atoms/MenuButton";
